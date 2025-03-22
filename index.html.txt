@@ -1,0 +1,60 @@
+<section id="curriculum" class="curriculum">
+  <div class="contenido-seccion">
+    <h2>Curriculum</h2>
+    <div class="fila">
+      <!-- Columna Educación -->
+      <div class="col izquierda">
+        <h3>Educación</h3>
+        <div class="item izq">
+          <h4>Certificado de Profesionalidad: Confección y Publicación de Páginas Web</h4>
+          <span class="casa">STAFF Formació</span>
+          <span class="fecha">2023 - 560 horas</span>
+          <p>
+            Formación en diseño, desarrollo y publicación de páginas web utilizando tecnologías como HTML5, CSS3 y JavaScript.
+            Incluye prácticas en entornos reales.
+          </p>
+          <div class="conectori">
+            <div class="circuloi"></div>
+          </div>
+        </div>
+        <div class="item izq">
+          <h4>Educación Secundaria Obligatoria (ESO)</h4>
+          <span class="casa">CFA Maria Rubies</span>
+          <span class="fecha">2015</span>
+          <p>Formación básica con enfoque en asignaturas técnicas y científicas.</p>
+          <div class="conectori">
+            <div class="circuloi"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna Experiencia de Trabajo -->
+      <div class="col derecha">
+        <h3>Experiencia de trabajo</h3>
+        <div class="item der">
+          <h4>Desarrollador Web (Proyectos personales)</h4>
+          <span class="casa">Freelance</span>
+          <span class="fecha">2023 - Actualidad</span>
+          <p>
+            Creación de sitios web responsivos usando HTML, CSS y JavaScript. Optimización para tiempos de carga y SEO básico.
+            Gestión de proyectos mediante GitHub.
+          </p>
+          <div class="conectord">
+            <div class="circulod"></div>
+          </div>
+        </div>
+        <div class="item der">
+          <h4>Operario de Almacén y Limpieza</h4>
+          <span class="casa">Decathlon</span>
+          <span class="fecha">Octubre 2019 - Septiembre 2022</span>
+          <p>
+            Tareas de limpieza, preparación de palets y picking de mercancías, con enfoque en la organización y el trabajo en equipo.
+          </p>
+          <div class="conectord">
+            <div class="circulod"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
