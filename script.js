@@ -2,64 +2,70 @@ let menuVisible = false;
 
 // Función que oculta o muestra el menú
 function mostrarOcultarMenu() {
+  const nav = document.getElementById("nav");
   if (menuVisible) {
-    document.getElementById("nav").classList = "";
+    nav.classList.remove("responsive");
     menuVisible = false;
   } else {
-    document.getElementById("nav").classList = "responsive";
+    nav.classList.add("responsive");
     menuVisible = true;
   }
 }
 
 // Función para ocultar el menú al seleccionar una opción
 function seleccionar() {
-  document.getElementById("nav").classList = "";
+  const nav = document.getElementById("nav");
+  nav.classList.remove("responsive");
   menuVisible = false;
 }
 
 // Función que aplica las animaciones de las habilidades
 function efectoHabilidades() {
-  var skills = document.getElementById("skills");
-  var distancia_skills =
+  const skills = document.getElementById("skills");
+  const distancia_skills =
     window.innerHeight - skills.getBoundingClientRect().top;
   if (distancia_skills >= 300) {
-    let habilidades = document.getElementsByClassName("progreso");
-    habilidades[0].classList.add("javascript");
-    habilidades[1].classList.add("html");
-    habilidades[2].classList.add("css");
-    habilidades[3].classList.add("wordpress");
-    habilidades[4].classList.add("comunicacion");
-    habilidades[5].classList.add("trabajo");
-    habilidades[6].classList.add("creatividad");
-    habilidades[7].classList.add("dedicacion");
+    const habilidades = document.getElementsByClassName("progreso");
+    if (habilidades.length >= 8) {
+      habilidades[0].classList.add("javascript");
+      habilidades[1].classList.add("html");
+      habilidades[2].classList.add("css");
+      habilidades[3].classList.add("wordpress");
+      habilidades[4].classList.add("comunicacion");
+      habilidades[5].classList.add("trabajo");
+      habilidades[6].classList.add("creatividad");
+      habilidades[7].classList.add("dedicacion");
+    }
   }
 }
 
 // Función para abrir el modal y cargar la imagen
-// Función para abrir el modal y cargar la imagen
 function openModal(imageSrc) {
-  var modal = document.getElementById("modal");
-  var modalImg = document.getElementById("modal-img");
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modal-img");
 
   modal.style.display = "block";
-  modalImg.src = imageSrc; // Actualiza la fuente de la imagen
+  modalImg.src = imageSrc;
 }
 
 // Función para cerrar el modal
 function cerrarModal() {
-  var modal = document.getElementById("modal");
+  const modal = document.getElementById("modal");
   modal.style.display = "none";
 }
 
-// Cuando el usuario hace clic fuera del modal, se cierra
+// Cierra el modal si se hace clic fuera de la imagen
 window.onclick = function (event) {
-  var modal = document.getElementById("modal");
-  if (event.target == modal) {
+  const modal = document.getElementById("modal");
+  if (event.target === modal) {
     modal.style.display = "none";
   }
 };
 
-// Detecto el scrolling para aplicar la animación de la barra de habilidades
+// Aplica animaciones al hacer scroll
 window.onscroll = function () {
   efectoHabilidades();
 };
+
+// Llama a la función para mostrar el menú
+mostrarOcultarMenu();
