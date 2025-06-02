@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <title>Sobre Mí - Raúl Berbel</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="index.html">Raúl</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="about.html" class="active">SOBRE MI</a></li>
+            <li><a href="skills.html">HABILIDADES</a></li>
+            <li><a href="curriculum.html">CURRICULUM</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="contact.html">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola, soy Raúl Berbel Albín.</span> Soy un desarrollador
+          FullStack con especial pasión por el frontend, creando interfaces
+          modernas y funcionales que ofrecen experiencias de usuario
+          excepcionales. Combino diseño y lógica para construir aplicaciones
+          completas y eficientes, siempre aprendiendo y adaptándome a las
+          últimas tecnologías.
+        </p>
+
+        <div class="fila">
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li><strong>Cumpleaños:</strong> 24-07-1991</li>
+              <li><strong>Teléfono:</strong> +34-661255564</li>
+              <li><strong>Email:</strong> raulone496@gmail.com</li>
+              <li>
+                <strong>Website:</strong>
+                https://portfolio-raulberbel.vercel.app/
+              </li>
+              <li>
+                <strong>Dirección:</strong> Av.Carrilet 228, Hospitalet de
+                llobregat, Barcelona.
+              </li>
+              <li>
+                <strong>Cargo:</strong> <span>Desarrollador web FullStack</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i><span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i><span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i><span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-person-hiking"></i><span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i><span>LIBROS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i><span>AUTOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-camera"></i><span>FOTOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="http://portfolioraulberbel1.wuaze.com/cv/mi_cv.pdf"
+          download="mi_cv.pdf"
+          class="download-btn"
+        >
+          <button>
+            Descargar CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

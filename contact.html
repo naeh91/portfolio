@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <title>Contacto - Raúl Berbel</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="index.html">Raúl</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="about.html">SOBRE MI</a></li>
+            <li><a href="skills.html">HABILIDADES</a></li>
+            <li><a href="curriculum.html">CURRICULUM</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="contact.html" class="active">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <form action="https://formsubmit.co/raulone496@gmail.com" method="POST">
+          <div class="col">
+            <input type="text" name="nombre" placeholder="Tú Nombre" required />
+            <input
+              type="text"
+              name="telefono"
+              placeholder="Número telefónico"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Dirección de correo"
+              required
+            />
+            <input type="text" name="tema" placeholder="Tema" required />
+            <textarea
+              name="mensaje"
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+              required
+            ></textarea>
+            <input
+              type="hidden"
+              name="_next"
+              value="http://naehdev1.infinityfreeapp.com/index.html"
+            />
+          </div>
+
+          <button type="submit" value="enviar" class="enviar-btn">
+            Enviar <i class="fa-solid fa-paper-plane"></i>
+            <span class="overlay"></span>
+          </button>
+
+          <div class="col">
+            <img src="img/ubiPortfolio.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Hospitalet de Llobregat, Barcelona
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Llamanos: +34-661255564
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: raulone496@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a
+          href="https://www.linkedin.com/in/raul-berbel-albin-909308280/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
+      <p>Frontend Developer - Raúl Berbel 2025.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

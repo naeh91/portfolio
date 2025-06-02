@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <title>Portfolio - Raúl Berbel</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="index.html">Raúl</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="about.html">SOBRE MI</a></li>
+            <li><a href="skills.html">HABILIDADES</a></li>
+            <li><a href="curriculum.html">CURRICULUM</a></li>
+            <li><a href="portfolio.html" class="active">PORTFOLIO</a></li>
+            <li><a href="contact.html">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <!-- Proyecto 1 -->
+          <div class="proyecto">
+            <div class="imagen-contenedor">
+              <img src="img/p1.jpg" alt="Proyecto 1" />
+            </div>
+            <div class="botones-proyecto">
+              <a
+                href="https://ejemplo.com/proyecto1"
+                target="_blank"
+                class="btn-demo"
+                >Demo</a
+              >
+              <button class="btn-img" onclick="abrirModal('img/p1.jpg')">
+                Img
+              </button>
+            </div>
+            <div class="tecnologias">
+              <i class="fab fa-html5" title="HTML5"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+              <i class="fab fa-js" title="JavaScript"></i>
+            </div>
+          </div>
+
+          <!-- Proyecto 2 -->
+          <div class="proyecto">
+            <div class="imagen-contenedor">
+              <img src="img/gommo.jpg" alt="Gommo App" />
+            </div>
+            <div class="botones-proyecto">
+              <a href="https://gommo.es" target="_blank" class="btn-demo"
+                >Demo</a
+              >
+              <button class="btn-img" onclick="abrirModal('img/gommo.jpg')">
+                Img
+              </button>
+            </div>
+            <div class="tecnologias">
+              <i class="fab fa-react" title="React"></i>
+              <i class="fab fa-node-js" title="Node.js"></i>
+              <i class="fas fa-database" title="MongoDB"></i>
+            </div>
+          </div>
+
+          <!-- Proyecto 3 -->
+          <div class="proyecto">
+            <div class="imagen-contenedor">
+              <img src="img/breackoutgame.jpg" alt="Breakout Game" />
+            </div>
+            <div class="botones-proyecto">
+              <a
+                href="https://ejemplo.com/breakout"
+                target="_blank"
+                class="btn-demo"
+                >Demo</a
+              >
+              <button
+                class="btn-img"
+                onclick="abrirModal('img/breackoutgame.jpg')"
+              >
+                Img
+              </button>
+            </div>
+            <div class="tecnologias">
+              <i class="fab fa-js" title="JavaScript"></i>
+              <i class="fab fa-html5" title="HTML5"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+            </div>
+          </div>
+
+          <!-- Proyecto 4 -->
+          <div class="proyecto">
+            <div class="imagen-contenedor">
+              <img src="img/docentes.jpg" alt="Sistema Docentes" />
+            </div>
+            <div class="botones-proyecto">
+              <a href="#" class="btn-demo disabled">Próximamente</a>
+              <button class="btn-img" onclick="abrirModal('img/docentes.jpg')">
+                Img
+              </button>
+            </div>
+            <div class="tecnologias">
+              <i class="fab fa-php" title="PHP"></i>
+              <i class="fas fa-database" title="MySQL"></i>
+              <i class="fab fa-js" title="JavaScript"></i>
+            </div>
+          </div>
+
+          <!-- Proyecto 5 -->
+          <div class="proyecto">
+            <div class="imagen-contenedor">
+              <img src="img/buscadorpelicula.jpg" alt="Buscador Películas" />
+            </div>
+            <div class="botones-proyecto">
+              <a
+                href="https://ejemplo.com/buscador-peliculas"
+                target="_blank"
+                class="btn-demo"
+                >Demo</a
+              >
+              <button
+                class="btn-img"
+                onclick="abrirModal('img/buscadorpelicula.jpg')"
+              >
+                Img
+              </button>
+            </div>
+            <div class="tecnologias">
+              <i class="fab fa-react" title="React"></i>
+              <i class="fab fa-js" title="JavaScript"></i>
+              <i class="fas fa-film" title="API REST"></i>
+            </div>
+          </div>
+
+          <!-- Proyecto 6 -->
+          <div class="proyecto">
+            <div class="imagen-contenedor">
+              <img src="img/searchfilter.jpg" alt="Filtro Búsqueda" />
+            </div>
+            <div class="botones-proyecto">
+              <a
+                href="https://ejemplo.com/filtro-busqueda"
+                target="_blank"
+                class="btn-demo"
+                >Demo</a
+              >
+              <button
+                class="btn-img"
+                onclick="abrirModal('img/searchfilter.jpg')"
+              >
+                Img
+              </button>
+            </div>
+            <div class="tecnologias">
+              <i class="fab fa-js" title="JavaScript"></i>
+              <i class="fab fa-html5" title="HTML5"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="modal" class="modal">
+      <span class="close" onclick="cerrarModal()">&times;</span>
+      <img class="modal-content" id="modal-img" />
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+      function abrirModal(src) {
+        const modal = document.getElementById("modal");
+        const modalImg = document.getElementById("modal-img");
+        modal.style.display = "block";
+        modalImg.src = src;
+      }
+
+      function cerrarModal() {
+        document.getElementById("modal").style.display = "none";
+      }
+
+      window.onclick = function (event) {
+        const modal = document.getElementById("modal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
