@@ -464,7 +464,7 @@ footer .arriba {
 }
 
 .skills .skill .barra-skill {
-  height: 8px;
+  height: px;
   width: 80%;
   background-color: #ccc;
   position: relative;
@@ -674,6 +674,7 @@ footer .arriba {
 }
 
 /* SECCION PORTFOLIO */
+
 .portfolio {
   background-color: var(--color-fondo);
   color: var(--color-texto);
